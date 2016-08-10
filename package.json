@@ -1,0 +1,19 @@
+{
+  "name": "h5_make",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fiveSecondsRealMan/H5Make.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fiveSecondsRealMan/H5Make/issues"
+  },
+  "homepage": "https://github.com/fiveSecondsRealMan/H5Make#readme"
+}
