@@ -31,7 +31,7 @@ H5Make是一个可视化编辑和制作手机页面的平台，为用户提供�
 > pm2 start server.json
 
 * 查看
-> 浏览器输入http://localhost:7878查看效果
+> 浏览器输入http://localhost:7878 查看效果
 
 ### 如何实现
 todo

@@ -28,6 +28,11 @@ Object.assign(resAlias, {
   components: path.join(__DEVPATH__, 'components')
 });
 
+// actions
+Object.assign(resAlias, {
+  actions: path.join(__DEVPATH__, 'actions')
+});
+
 // todo
 
 /**
