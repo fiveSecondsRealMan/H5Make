@@ -16,10 +16,6 @@
   "bugs": {
     "url": "https://github.com/fiveSecondsRealMan/H5Make/issues"
   },
-<<<<<<< HEAD
-  "homepage": "https://github.com/fiveSecondsRealMan/H5Make#readme"
-}
-=======
   "homepage": "https://github.com/fiveSecondsRealMan/H5Make#readme",
   "dependencies": {
     "babel-loader": "^6.2.4",
@@ -42,4 +38,3 @@
     "react-redux": "^4.4.5"
   }
 }
->>>>>>> origin/master

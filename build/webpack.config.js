@@ -33,7 +33,20 @@ Object.assign(resAlias, {
   actions: path.join(__DEVPATH__, 'actions')
 });
 
-// todo
+// constants
+Object.assign(resAlias, {
+  constants: path.join(__DEVPATH__, 'constants')
+});
+
+// store
+Object.assign(resAlias, {
+  store: path.join(__DEVPATH__, 'store')
+});
+
+// reducers
+Object.assign(resAlias, {
+  reducers: path.join(__DEVPATH__, 'reducers')
+});
 
 /**
   webpack 配置选项

@@ -4,26 +4,30 @@
   2016.8.11
 **/
 
+/**
+ redux工作流程
+ 1、声明actionCreator
+ 2、reducer
+ 3、combineReducers
+ 4、createStore
+ 5、bindActionCreators
+**/
+
 'use strict';
 
-import Button from 'components/Calc';
-import { connect } from 'react-redux';
+import store from 'store/index';
 import { bindActionCreators } from 'redux';
-import * as CalcActions from 'actions/calc';
+import * as actions from 'actions/index';
+import { Component }, React from 'react';
+import { RenderDOM } from 'react-dom';
 
+let dispatchToProps = dispatch => bindActionCreators(actions, dispatch);
+let initialState = {};
 
-export default connect(
-  // state数据绑定到props
-  state => {
-    return {
-      counter: state.counter
-    };
-  }
-  // action绑定到props
-  dispatch => bindActionCreators(CalcActions, dispatch)
-)(Button);
+class App extends
 
-/*
- connect方法
- react-redux提供了让redux更方便操作react的方法
-*/
+let render = () => {
+
+};
+
+store.subscribe(render);
