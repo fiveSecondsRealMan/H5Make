@@ -1,0 +1,37 @@
+redux createStore解析
+
+源码中：export default function createStore (reducer, preloadedState, enhancer) {
+
+  定义 currentReducer、currentState、currentListeners、 nextListeners = []、 isDispatching
+
+  function getState () {
+    return currentState
+  }
+
+  function subscribe (listener) {
+    // 如果listener不是函数，那么throw error
+
+    // 标识已经有一个subscribe state change event handle
+    var isSubscribed = true;
+
+    // 复制当前listener填充nextListeners
+    ensureCanMutateNextListeners();
+    nextListeners.push(listener);
+
+    return function () {
+      if (!isSubscribed) {
+        return;
+      }
+      isSubscribed = false;
+
+      // 从nextListeners里删除listener
+    };
+  }
+
+  // 发送一个action
+  // action必须是一个对象，并且存在type属性
+  function dispatch (action) {
+       // 通过传入rootReducer的state = undefined获取rootReducer的state，
+  }
+
+}

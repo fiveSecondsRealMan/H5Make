@@ -1,0 +1,5 @@
+export default function combineReducers(reducers) {
+
+}
+
+// 每个reducer的state都不能为undefined
