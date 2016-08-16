@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+.dialog {
+  position: fixed;
+  background-color: #fff;
+  z-index: 9999;
+}
+
+.dialog-appearance {
+  border-radius: 10px;
+}
+
+.dialog-inner {
+  padding: 10px;
+}
+
+.dialog-header {
+  line-height: 30px;
+}
+
+.dialog-title {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.dialog-close-btn {
+  width: 15px;
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+}
+
+.dialog-content .item {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+}
+
+.dialog-content .item input {
+  color: #333;
+}
+
+.dialog-footer {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+
+.dialog-footer .btn {
+  display: block;
+  line-height: 32px;
+  color: #fff;
+  border-radius: 8px;
+  -webkit-box-flex: 1;
+  text-align: center;
+}

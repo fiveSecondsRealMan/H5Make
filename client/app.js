@@ -1,33 +1,41 @@
 /**
-  前端入口文件
-  曾文彬
-  2016.8.11
-**/
-
-/**
- redux工作流程
- 1、声明actionCreator
- 2、reducer
- 3、combineReducers
- 4、createStore
- 5、bindActionCreators
+  H5Make入口文件
 **/
 
 'use strict';
 
-import store from 'store/index';
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import { bindActionCreators } from 'redux';
+import store from 'store/index';
 import * as actions from 'actions/index';
-import { Component }, React from 'react';
-import { RenderDOM } from 'react-dom';
 
-let dispatchToProps = dispatch => bindActionCreators(actions, dispatch);
-let initialState = {};
+// 引入公共样式
+import './pages/statics/styles/common.css';
 
-class App extends
+// 引入组件
+import Main from 'components/main';
 
-let render = () => {
+// 定义组件容器
+class App extends Component {
+  render() {
+    return (
+      <Main />
+    );
+  }
+}
 
+// 定义dispatch和action结合的action对象
+const dispatchToProps = (dispatch) => bindActionCreators(actions, dispatch);
+
+// 定义维护和管理应用状态的store
+const myStore = store();
+
+// 定义组件渲染方法
+const render = () => {
+  ReactDOM.render(<App { ...dispatchToProps(myStore.dispatch) } />, document.getElementById('app'));
 };
 
-store.subscribe(render);
+render();
+
+myStore.subscribe(render);
