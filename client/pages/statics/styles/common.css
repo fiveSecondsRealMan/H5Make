@@ -6,6 +6,8 @@ ul, ol, li { list-style: none; }
 
 a { text-decoration: none; }
 
+button, input, select, textarea { border: none; outline: none; }
+
 img { border: 0; }
 
 .clearfix { display: block; }
@@ -13,3 +15,5 @@ img { border: 0; }
 
 .fl { float: left; }
 .fr { float: right; }
+
+body { font-size: 12px; font-family: "微软雅黑", Microsoft YaHei, Arial, Lucida, Verdana, Hiragino Sans GB, STHeiti, WenQuanYi Micro Hei, SimSun, sans-serif; }

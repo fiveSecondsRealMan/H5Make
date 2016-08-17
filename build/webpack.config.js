@@ -23,6 +23,11 @@ const __DISTPATH__ = path.join(__ROOTPATH__, 'client');
 
 let resAlias = {};
 
+// 静态资源
+Object.assign(resAlias, {
+  statics: path.join(__DEVPATH__, 'pages', 'statics')
+});
+
 // 组件别名
 Object.assign(resAlias, {
   components: path.join(__DEVPATH__, 'components')

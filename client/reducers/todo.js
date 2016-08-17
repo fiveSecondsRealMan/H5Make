@@ -4,7 +4,7 @@ import {
   ADD_ITEM,
   DELETE_ITEM,
   UPDATE_ITEM
-} from 'constants/actionTypes';
+} from 'constants/actionType';
 
 export default (state = {}, action) => {
   switch (action.type) {
@@ -14,5 +14,7 @@ export default (state = {}, action) => {
       return Object.assign({}, state, { id: state.id });
     case UPDATE_ITEM:
       return Object.assign({}, state, { data: state.data });
+    default:
+      return state;
   }
 };
